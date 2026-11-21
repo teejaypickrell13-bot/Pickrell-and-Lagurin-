@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CourtSide — Arcade Basketball</title>
+  <link rel="stylesheet" href=".CSS" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="brand-icon" aria-hidden="true">🏀</div>
+      <div>
+        <h1>COURTSIDE ARCADE</h1>
+        <span>Precision Shot Challenge</span>
+      </div>
+    </div>
+
+    <header class="simple-header">
+    <a href="#" class="brand-link">🏀 CourtSide</a>
+
+    <div class="hud">
+      <div class="stat-box">
+        <span class="stat-label">Score</span>
+        <strong class="stat-value" id="scoreVal">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Best</span>
+        <strong class="stat-value" id="bestVal">0</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Streak</span>
+        <strong class="stat-value" id="streakVal">0x</strong>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Time</span>
+        <strong class="stat-value" id="timeVal">60s</strong>
+      </div>
+      <button class="btn" id="restartBtn">New Game</button>
+    </div>
+  </header>
+
+    <div class="hud">
+      <div class="stat-box">
+        <div class="stat-label">Score</div>
+        <div class="stat-value" id="scoreVal">0</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Best</div>
+        <div class="stat-value" id="bestVal">0</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Streak</div>
+        <div class="stat-value" id="streakVal">0x</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-label">Time</div>
+        <div class="stat-value" id="timeVal">60s</div>
+      </div>
+      <button class="btn" id="restartBtn">New Game</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="arena-wrapper">
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+      <div class="overlay" id="startOverlay">
+        <h2>READY TO SHOOT?</h2>
+        <p>
+          Drag back from the ball like a slingshot to aim and set power.
+          Clean swishes award <strong>+3 points</strong> and build your streak!
+        </p>
+        <button class="btn" id="startBtn">Start 60s Round</button>
+      </div>
+
+      <div class="overlay hidden" id="endOverlay">
+        <h2>TIME'S UP!</h2>
+        <p id="finalSummary">You scored 0 points.</p>
+        <button class="btn" id="playAgainBtn">Play Again</button>
+      </div>
+    </div>
+
+    <p class="controls-hint">
+      <strong>Mouse / Touch:</strong> Drag from the ball &amp; release to shoot &nbsp;|&nbsp;
+      <strong>Keyboard:</strong> ← / → to adjust angle, Hold Space to charge power, Release to shoot
+    </p>
+  </main>
+
+  <footer>
+    <div>CourtSide Arcade Basketball &copy; <span id="year"></span></div>
+    <div>Tip: Aim slightly higher than the front rim for clean swishes.</div>
+    <footer class="about-footer">
+    <div class="footer-about">
+      <strong>About CourtSide</strong>
+
+      <lu>
+        <li> 09450833042</li>
+        <li> teejayhatdgo123@.gmail.com</li >
+      </lu>
+      <p>
+        A fast-paced arcade basketball shooting game built with HTML5 Canvas, CSS, and JavaScript.
+        Aim for clean swishes, build streaks, and beat your high score in 60-second rounds.
+      </p>
+    </div>
+
+    <div class="footer-meta">
+      <span>&copy; <span id="year"></span> CourtSide Basketball</span>
+      <span class="footer-note">Made for quick browser arcade sessions</span>
+    </div>
+  </footer>
+  </footer>
+
+  <script src="chollo.js"></script>
+</body>
+</html>
